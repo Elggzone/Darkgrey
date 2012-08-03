@@ -1,11 +1,16 @@
 = Version history =
 
+2012.08.03:
+
+- Added: id element to manifest
+- Updated: groups_icon_url_handler
+
 2012.07.15:
 
 - Updated to Elgg 1.8.8
 - Added: arrow_left.png
 - Remamed: follow_icon.png to arrow_right.png
-- Added: tidypics support - pages/css.php
+- Added: tidypics support - photos/css.php
 
 2012.06.22:
 

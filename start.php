@@ -43,9 +43,10 @@ function elggzone_darkgrey_theme_groups_icon_url_handler($hook, $entity_type, $r
 	$group = $params['entity'];
 	$size = $params['size'];
 
-	if (isset($group->icontime)) {
+	$icontime = $group->icontime;
+		
+	if ($icontime) {
 		// return thumbnail
-		$icontime = $group->icontime;
 		return "groupicon/$group->guid/$size/$icontime.jpg";
 	}
 	return "mod/elggzone_darkgrey/graphics/groups/default{$size}.gif";
