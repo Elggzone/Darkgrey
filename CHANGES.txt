@@ -1,5 +1,10 @@
 = Version history =
 
+2012.11.14:
+
+- Updated to Elgg 1.8.9
+- Added: Code link in manifest
+
 2012.08.03:
 
 - Added: id element to manifest
