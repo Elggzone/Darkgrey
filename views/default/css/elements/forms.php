@@ -213,11 +213,14 @@ input[type="radio"] {
 	margin:10px 0 0;
 	padding:10px 10px 0;
 }
+.ui-autocomplete a.ui-state-hover {
+	background-color: #eee;
+	display: block;
+}
 
 /* ***************************************
 	USER PICKER
 *************************************** */
-
 .user-picker .user-picker-entry {
 	clear:both;
 	height:25px;
