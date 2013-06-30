@@ -1,6 +1,6 @@
 = Version history =
 
-2013.06.01:
+2013.06.30:
 
 - Initial release for Elgg 1.9
 
