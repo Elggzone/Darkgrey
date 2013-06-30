@@ -13,3 +13,5 @@ FEATURES:
 - Logo psd included
 - W3C Validated
 - Version Elgg 1.8
+
+**Note!** This directory must be named 'elggzone_darkgrey' in your Elgg mod folder.

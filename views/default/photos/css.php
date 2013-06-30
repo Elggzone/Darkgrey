@@ -409,8 +409,6 @@ font-size:1em;
 /* ---- tidypics group css ----- */
 
 #tidypics_group_profile {
--webkit-border-radius: 8px; 
--moz-border-radius: 8px;
 background:white none repeat scroll 0 0;
 margin:0 0 20px;
 padding:0 0 5px;
@@ -420,19 +418,19 @@ padding:0 0 5px;
 /* ---------  tidypics river items ------------   */
 
 .river_object_image_create {
-	background: url(<?php echo $vars['url']; ?>mod/tidypics/graphics/icons/river_icon_image.gif) no-repeat left -1px;
+	background: url(<?php echo elgg_get_site_url(); ?>mod/tidypics/graphics/icons/river_icon_image.gif) no-repeat left -1px;
 }
 .river_object_album_create {
-	background: url(<?php echo $vars['url']; ?>mod/tidypics/graphics/icons/river_icon_album.gif) no-repeat left -1px;
+	background: url(<?php echo elgg_get_site_url(); ?>mod/tidypics/graphics/icons/river_icon_album.gif) no-repeat left -1px;
 }
 .river_object_image_comment {
-	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo elgg_get_site_url(); ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_object_album_comment {
-	background: url(<?php echo $vars['url']; ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
+	background: url(<?php echo elgg_get_site_url(); ?>_graphics/river_icons/river_icon_comment.gif) no-repeat left -1px;
 }
 .river_user_tag {
-	background: url(<?php echo $vars['url']; ?>mod/tidypics/graphics/icons/river_icon_tag.gif) no-repeat left -1px;
+	background: url(<?php echo elgg_get_site_url(); ?>mod/tidypics/graphics/icons/river_icon_tag.gif) no-repeat left -1px;
 }
 
 /* ----------- tagging ---------------- */
@@ -446,8 +444,6 @@ display:none;
 overflow:hidden; 
 position:absolute; 
 z-index:10000;
--webkit-border-radius: 8px; 
--moz-border-radius: 8px;
 }
 
 #tidypics_tag_instruct_text {
@@ -468,8 +464,6 @@ margin:0;
 width:240px;
 max-height:400px;
 overflow:hidden;
--webkit-border-radius: 8px; 
--moz-border-radius: 8px;
 }
 
 .tidypics_popup_header {
@@ -496,14 +490,12 @@ margin-top:2px;
 }
 
 #tidypics_delete_tag_menu {
--webkit-border-radius: 8px; 
--moz-border-radius: 8px;
 overflow:hidden;
 }
 
 .tidypics_tag {
 display:none;
-background:url(<?php echo $vars['url']; ?>mod/tidypics/graphics/spacer.gif); 
+background:url(<?php echo elgg_get_site_url(); ?>mod/tidypics/graphics/spacer.gif); 
 border:2px solid #ffffff; 
 overflow:hidden; 
 position:absolute; 
@@ -518,8 +510,6 @@ z-index:0;
 text-align:center;
 background:#BBDAF7;
 border:1px solid #3B5999;
--webkit-border-radius:3px; 
--moz-border-radius:3px;
 padding:1px;
 }
 
