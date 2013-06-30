@@ -1,3 +1,5 @@
+/* <style> /**/
+
 /* ***************************************
 	Modules
 *************************************** */
@@ -25,7 +27,7 @@
 
 /* Popup */
 .elgg-module-popup {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
 	border: 1px solid #59626D;	
 	
 	z-index: 9999;
@@ -46,9 +48,6 @@
 .elgg-module-dropdown {
 	background-color:white;
 	border:5px solid #CCC;
-	
-	-webkit-border-radius: 5px 0 5px 5px;
-	-moz-border-radius: 5px 0 5px 5px;
 	border-radius: 5px 0 5px 5px;
 	
 	display:none;
@@ -74,7 +73,7 @@
 .elgg-module-featured > .elgg-head {
 	padding: 5px;
     border-bottom: 1px solid #59626D;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 }
 .elgg-module-featured > .elgg-head * {
 	color: white;
@@ -136,7 +135,7 @@
 .elgg-module-widget > .elgg-head {
 	color: #d2d8de;
     border-bottom: 1px solid #59626D;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	height: 26px;
 	overflow: hidden;
 }

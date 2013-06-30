@@ -10,6 +10,7 @@
  * @subpackage UI
  */
 ?>
+/* <style> /**/
 
 /* ***************************************
 	PAGE LAYOUT
@@ -83,10 +84,13 @@
 
 }
 .elgg-layout-error {
-	margin-top: 20px;
+	padding-top: 20px;
+}
+.elgg-layout-widgets > .elgg-widgets {
+	float: right;
 }
 .elgg-sidebar {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	position: relative;
 	padding: 20px;
 	float: right;
@@ -94,7 +98,7 @@
 	margin: 0 0 0 10px;
 }
 .elgg-sidebar-alt {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	position: relative;
 	padding: 20px;
 	float: left;
@@ -102,7 +106,7 @@
 	margin: 0 10px 0 0;
 }
 .elgg-main {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	position: relative;
 	min-height: 360px;
 	padding: 20px;

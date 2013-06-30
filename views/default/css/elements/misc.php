@@ -1,3 +1,5 @@
+/* <style> /**/
+
 /* ***************************************
 	MISC
 *************************************** */
@@ -37,7 +39,7 @@
 	color: #d2d8de;
 }
 #friends_collections_accordian li h2 {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	color: #d2d8de;
 	cursor: pointer;
 	font-size: 1.0em;
@@ -45,7 +47,7 @@
 	padding: 4px 4px 6px 6px;
 }
 #friends_collections_accordian li h2:hover {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg30.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg30.png) repeat;
 	color:white;
 }
 #friends_collections_accordian .friends_collections_controls {

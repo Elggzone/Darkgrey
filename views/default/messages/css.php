@@ -44,9 +44,6 @@
 	color: white;
 	background-color: red;
     line-height: 1.3em;
-    	
-	-webkit-border-radius: 10px; 
-	-moz-border-radius: 10px;
 	border-radius: 10px;
 	
 	-webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.50);

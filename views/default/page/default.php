@@ -6,8 +6,8 @@
  * @package Elgg
  * @subpackage Core
  *
- * @uses $vars['title'] The page title
- * @uses $vars['body'] The main content of the page
+ * @uses $vars['title']       The page title
+ * @uses $vars['body']        The main content of the page
  * @uses $vars['sysmessages'] A 2d array of various message registers, passed from system_messages()
  */
 
@@ -33,9 +33,11 @@ $footer = elgg_view('page/elements/footer', $vars);
 // Set the content type
 header("Content-type: text/html; charset=UTF-8");
 
+$lang = get_current_language();
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 <head>
 <?php echo elgg_view('page/elements/head', $vars); ?>
 </head>
