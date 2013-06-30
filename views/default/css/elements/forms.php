@@ -6,6 +6,7 @@
  * @subpackage UI
  */
 ?>
+/* <style> /**/
 
 /* ***************************************
 	Form Elements
@@ -111,7 +112,7 @@ input[type="radio"] {
 	padding:0;
 	width: 690px;
 	height: auto;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 }
 .friendspicker-savebuttons {
 	margin:0 10px 10px;
@@ -151,7 +152,7 @@ input[type="radio"] {
 .friends-picker-navigation a {
 	font-weight: bold;
 	text-align: center;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	color: #d2d8de;
 	text-decoration: none;
 	display: block;
@@ -205,9 +206,6 @@ input[type="radio"] {
 }
 .friendspicker-members-table {
 	background: #dedede;
-	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
 	border-radius: 8px;
 	
 	margin:10px 0 0;
@@ -241,8 +239,6 @@ input[type="radio"] {
 	width: 208px;
 	background-color: white;
 	border: 1px solid #0054A7;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	border-radius: 6px;
 	overflow: hidden;
 

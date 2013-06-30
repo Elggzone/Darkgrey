@@ -6,6 +6,8 @@
 $url = elgg_get_site_url();
 
 ?>
+/* <style> /**/
+
 .elgg-body-walledgarden {
 	margin: 100px auto 0 auto;
 	position: relative;
@@ -15,6 +17,7 @@ $url = elgg_get_site_url();
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 530px;
 }
 .elgg-module-walledgarden > .elgg-head {
 	height: 17px;
@@ -31,7 +34,7 @@ $url = elgg_get_site_url();
 .elgg-walledgarden-single > .elgg-head,
 .elgg-walledgarden-single > .elgg-body,
 .elgg-walledgarden-single > .elgg-foot {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 }
 .elgg-col > .elgg-inner {
 	margin: 0 0 0 0;

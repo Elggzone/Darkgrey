@@ -1,6 +1,6 @@
 <?php
 
-$english = array(
+return array(
 
 	// topbar
 	'elggzone_darkgrey:guest'			=> 'Welcome Guest',
@@ -10,5 +10,3 @@ $english = array(
 	'elggzone_darkgrey:tooltip' 		=> 'Visit Elggzone',
 		
 );
-
-add_translation("en", $english);

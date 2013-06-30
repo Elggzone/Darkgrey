@@ -6,6 +6,7 @@
  * @subpackage UI
  */
 ?>
+/* <style> /**/
 
 /* ***************************************
 	PAGINATION
@@ -51,9 +52,6 @@
 	border-bottom-width: 0;
 	background: #59626D;
 	margin: 0 0 0 10px;
-	
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .elgg-tabs a {
@@ -67,8 +65,6 @@
 .elgg-tabs a:hover {
 	color: #FFF;
 	background: #939BA5;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .elgg-tabs .elgg-state-selected {
@@ -193,11 +189,9 @@
 .elgg-menu-site-default > .elgg-state-selected > a,
 .elgg-menu-site-default > li:hover > a {
 	padding-bottom:3px;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	border: 1px solid #59626D;
     border-bottom:none;	
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 
@@ -208,9 +202,6 @@
 	min-width: 150px;
 	border: 1px solid #59626D;
 	border-top: 0;
-
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
 
 	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -219,11 +210,8 @@
 }
 
 .elgg-menu-site-more > li > a {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg40.png) repeat;
 	color: #FFF;
-
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
 
 	-webkit-box-shadow: none;
@@ -232,14 +220,12 @@
 }
 
 .elgg-menu-site-more > li > a:hover {
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
 	color: white;
 }
 
 .elgg-menu-site-more > li:last-child > a,
 .elgg-menu-site-more > li:last-child > a:hover {
-	-webkit-border-radius: 0 0 4px 4px;
-	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
 }
 
@@ -276,9 +262,6 @@
 	border-bottom-width: 0;
 	background: #59626D;
 	margin: 0 0 0 10px;
-	
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > li:hover {
@@ -295,8 +278,6 @@
 .elgg-menu-filter > li > a:hover {
 	color: #FFF;
 	background: #939BA5;
-	-webkit-border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > .elgg-state-selected {
@@ -355,7 +336,7 @@
 	max-width: 250px;
 	border: solid 1px;
 	border-color: #59626D #999 #999 #59626D;
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
 	
 	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.50);
 	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.50);

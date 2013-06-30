@@ -7,6 +7,7 @@
  */
 
 ?>
+/* <style> /**/
 
 /* ***************************************
 	ICONS
@@ -324,8 +325,6 @@
 	height: 25px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
 	
 	-moz-background-clip:  border;
@@ -342,8 +341,6 @@
 	height: 40px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
 	
 	-moz-background-clip:  border;
@@ -360,6 +357,9 @@
 	height: 100px;
 }
 .elgg-avatar-large > a > img {
-	width: 200px;
-	height: 200px;
+	max-width: 100%;
+	height: auto;
+}
+.elgg-state-banned {
+	opacity: 0.5;
 }

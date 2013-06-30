@@ -6,7 +6,7 @@
  */
 ?>
 #fancybox-outer{
-    background: url(<?php echo $vars['url']; ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
+    background: url(<?php echo elgg_get_site_url(); ?>mod/elggzone_darkgrey/graphics/gradients/bg80.png) repeat;
 }
 .embed-wrapper {
 	width: 730px;
