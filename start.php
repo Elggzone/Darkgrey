@@ -16,7 +16,8 @@ elgg_register_event_handler('init','system','elggzone_darkgrey_init');
 function elggzone_darkgrey_init() {
 
 	elgg_register_event_handler('pagesetup', 'system', 'elggzone_darkgrey_pagesetup_handler', 1000);
-	
+
+	elgg_register_plugin_hook_handler('head', 'page', 'elggzone_darkgrey_setup_head');	
 	elgg_register_plugin_hook_handler('entity:icon:url', 'user', 'elggzone_darkgrey_theme_icon_url_handler');
 	elgg_register_plugin_hook_handler('entity:icon:url', 'group', 'elggzone_darkgrey_theme_groups_icon_url_handler');
 	
@@ -28,6 +29,24 @@ function elggzone_darkgrey_init() {
 	// If you want to get rid of the more button, uncomment the line below	
 	//elgg_unregister_plugin_hook_handler('prepare', 'menu:site', 'elgg_site_menu_setup');
 		
+}
+
+/**
+ * Register items for the html head
+ *
+ * @param string $hook Hook name ('head')
+ * @param string $type Hook type ('page')
+ * @param array  $data Array of items for head
+ * @return array
+ */
+function elggzone_darkgrey_setup_head($hook, $type, $data) {
+	
+	$data['links'][] = array(
+		'rel' => 'icon',
+		'href' => elgg_normalize_url('mod/elggzone_darkgrey/graphics/favicon.ico'),
+	);
+
+	return $data;
 }
 
 function elggzone_darkgrey_theme_icon_url_handler($hook, $entity_type, $returnvalue, $params) {
@@ -115,9 +134,5 @@ function elggzone_darkgrey_pagesetup_handler() {
 				'priority' => 2000,
 			));
 		}
-	}
-	
+	}	
 }
-
-
-?>

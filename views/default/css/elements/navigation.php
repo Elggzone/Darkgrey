@@ -389,6 +389,14 @@
 	float: left;
 }
 
+.elgg-menu-footer-alt li {
+	margin-right: 10px;
+}
+
+.elgg-menu-footer-meta {
+	float: left;
+}
+
 /* ***************************************
 	GENERAL MENU
 *************************************** */

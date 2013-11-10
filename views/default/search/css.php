@@ -9,8 +9,6 @@
 Search plugin
 ***********************************/
 .elgg-page-header .elgg-search {
-	bottom: 5px;
-	height: 23px;
 	position: absolute;
 	right: 0;
     top:40px;
@@ -24,9 +22,8 @@ Search plugin
 	font-weight: bold;
 	background:#79828F;
 	border: solid 1px #59626D;
-	height: 26px;
-	margin:0;
-    padding:3px 6px 5px 6px;
+	margin: 0;
+    padding: 4px 6px 5px 6px;
     border:none;
 	cursor: pointer;
     width: auto;
@@ -36,14 +33,13 @@ Search plugin
 	color: white;
 }
 .elgg-search input[type=text] {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	background-color:#939BA5;
 	border:1px solid #59626D;
 	color:#59626D;
 	font-size:12px;
 	margin:0;
-	height:26px;
-    padding:0 6px;
+    padding: 4px 6px 6px 6px;
 }
 .elgg-search input[type=text]:focus, .elgg-search input[type=text]:active {
 	background-color:#FFF;

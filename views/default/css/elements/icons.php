@@ -135,6 +135,12 @@
 .elgg-icon-mail-alt {
 	background-position: 0 -612px;
 }
+.elgg-menu-item-site-notifications .elgg-icon-mail:hover {
+	display:none;
+}
+.elgg-menu-item-site-notifications .elgg-icon-mail {
+	display:none;
+}
 .elgg-icon-mail:hover {
 	background-position: 0 -630px;
 }
